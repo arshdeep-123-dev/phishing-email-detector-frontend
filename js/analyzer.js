@@ -16,7 +16,7 @@ async function analyzeEmail() {
 
     try {
 
-        const response = await fetch("http://localhost:5000/api/analyze", {
+        const response = await fetch("https://phishing-email-detector-51mg.onrender.com/api/analyze", {
 
             method: "POST",
 
