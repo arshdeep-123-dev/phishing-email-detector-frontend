@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard | PhishGuard</title>
+
+<link rel="stylesheet" href="css/dashboard.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+<i class="fa-solid fa-shield-halved"></i>
+PhishGuard
+</div>
+
+<ul>
+
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="analyzer.html">Analyzer</a></li>
+<li><a href="history.html">History</a></li>
+<li><a href="awareness.html">Awareness</a></li>
+<li><a href="quiz.html">Quiz</a></li>
+
+</ul>
+
+</nav>
+
+<div class="container">
+
+<h1>Dashboard</h1>
+
+<p class="subtitle">
+Monitor phishing detection statistics.
+</p>
+
+<div class="cards">
+
+<div class="card blue">
+
+<i class="fa-solid fa-envelope"></i>
+
+<h2 id="totalEmails">82</h2>
+
+<p>Total Emails</p>
+
+</div>
+
+<div class="card red">
+
+<i class="fa-solid fa-triangle-exclamation"></i>
+
+<h2 id="highRisk">12</h2>
+
+<p>High Risk</p>
+
+</div>
+
+<div class="card orange">
+
+<i class="fa-solid fa-circle-exclamation"></i>
+
+<h2 id="mediumRisk">18</h2>
+
+<p>Medium Risk</p>
+
+</div>
+
+<div class="card green">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<h2 id="lowRisk">52</h2>
+
+<p>Low Risk</p>
+
+</div>
+
+</div>
+
+
+<div class="dashboard-grid">
+
+<div class="chart-card">
+
+<h2>Risk Distribution</h2>
+
+<canvas id="riskChart"></canvas>
+
+</div>
+
+
+<div class="history-card">
+
+<h2>Recent Analyses</h2>
+
+<table>
+
+<tr>
+
+<th>Website</th>
+
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>gmail-login.xyz</td>
+
+<td class="danger">High</td>
+
+</tr>
+
+<tr>
+
+<td>amazon-deals.net</td>
+
+<td class="medium">Medium</td>
+
+</tr>
+
+<tr>
+
+<td>sbi.co.in</td>
+
+<td class="safe">Low</td>
+
+</tr>
+
+<tr>
+
+<td>flipkart.com</td>
+
+<td class="safe">Safe</td>
+
+</tr>
+
+<tr>
+
+<td>paypal-secure.xyz</td>
+
+<td class="danger">High</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Email Analyzer | PhishGuard</title>
+
+<link rel="stylesheet" href="css/analyzer.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+<i class="fa-solid fa-shield-halved"></i>
+PhishGuard
+</div>
+
+<ul>
+
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="analyzer.html">Analyzer</a></li>
+<li><a href="history.html">History</a></li>
+<li><a href="awareness.html">Awareness</a></li>
+<li><a href="quiz.html">Quiz</a></li>
+
+</ul>
+
+</nav>
+
+<div class="container">
+
+<h1>Email Analyzer</h1>
+
+<p class="subtitle">
+Paste a suspicious email below for phishing analysis.
+</p>
+
+<textarea id="emailInput"
+placeholder="Paste the complete email here..."></textarea>
+
+<button id="analyzeBtn">
+Analyze Email
+</button>
+
+<div id="result" class="result">
+
+<h2>Analysis Result</h2>
+
+<div class="row">
+<strong>Sender :</strong>
+<span id="sender"></span>
+</div>
+
+<div class="row">
+<strong>Subject :</strong>
+<span id="subject"></span>
+</div>
+
+<div class="row">
+<strong>Risk Score :</strong>
+<span id="risk"></span>
+</div>
+
+<h3>Reasons</h3>
+
+<ul id="reasons"></ul>
+
+<h3>Highlighted Email</h3>
+
+<div id="highlightedEmail" class="highlight"></div>
+
+<h3>Recommendations</h3>
+
+<ul id="recommendations"></ul>
+
+</div>
+
+</div>
+
+<script src="js/analyzer.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Awareness | PhishGuard</title>
+
+    <link rel="stylesheet" href="css/awareness.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <div class="logo">
+            <i class="fa-solid fa-shield-halved"></i>
+            PhishGuard
+        </div>
+
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="analyzer.html">Analyzer</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="awareness.html" class="active">Awareness</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+        <h1>Cybersecurity Awareness</h1>
+
+        <p>
+            Learn how to recognize phishing attacks and protect yourself online.
+        </p>
+
+    </section>
+
+    <!-- Awareness Cards -->
+
+    <section class="cards">
+
+        <div class="card">
+            <i class="fa-solid fa-link"></i>
+
+            <h2>Never Click Unknown Links</h2>
+
+            <p>
+                Avoid clicking links from unknown emails or text messages.
+                Always verify before opening.
+            </p>
+
+            <button>Learn More</button>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-envelope-circle-check"></i>
+
+            <h2>Check Sender Email</h2>
+
+            <p>
+                Fake email addresses often resemble real companies.
+                Inspect the sender carefully.
+            </p>
+
+            <button>Learn More</button>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-globe"></i>
+
+            <h2>Verify Domains</h2>
+
+            <p>
+                Always verify website URLs before entering passwords or banking details.
+            </p>
+
+            <button>Learn More</button>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+
+            <h2>Enable 2FA</h2>
+
+            <p>
+                Two-factor authentication adds an extra security layer to your accounts.
+            </p>
+
+            <button>Learn More</button>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-filter-circle-xmark"></i>
+
+            <h2>Use Spam Filters</h2>
+
+            <p>
+                Enable spam filters to automatically detect suspicious emails.
+            </p>
+
+            <button>Learn More</button>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+
+            <h2>Report Phishing</h2>
+
+            <p>
+                Report phishing emails to your organization or email provider immediately.
+            </p>
+
+            <button>Learn More</button>
+        </div>
+
+    </section>
+
+    <!-- Popup -->
+
+    <div class="popup" id="popup">
+
+        <div class="popup-content">
+
+            <span id="close">&times;</span>
+
+            <h2 id="popupTitle"></h2>
+
+            <p id="popupText"></p>
+
+        </div>
+
+    </div>
+
+<script src="js/awareness.js"></script>
+
+</body>
+
+</html>
