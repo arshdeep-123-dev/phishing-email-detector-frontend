@@ -1,4 +1,5 @@
 const analyzeBtn = document.getElementById("analyzeBtn");
+const API_URL = "https://phishing-email-detector-51mg.onrender.com";
 
 analyzeBtn.addEventListener("click", analyzeEmail);
 
@@ -16,7 +17,8 @@ async function analyzeEmail() {
 
     try {
 
-        const response = await fetch("https://phishing-email-detector-51mg.onrender.com/api/analyze", {
+        const response = await fetch(
+            `${API_URL}/api/analyze`, {
 
             method: "POST",
 
